@@ -28,6 +28,7 @@ lib
 
 ## Images
 app/assets/img/**
+src/img/**
 
 ## Sass
 .sass-cache
