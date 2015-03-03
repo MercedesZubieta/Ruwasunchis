@@ -29,10 +29,8 @@ $user-card-width: 70px;
 .site-wrapper,
 .site-content {
 	min-height: 100%;
-	position: relative;
-}
-.site-content {
 	height: 100%;
+	position: relative;
 }
 
 // HERO UNIT
@@ -60,4 +58,15 @@ $user-card-width: 70px;
 // CLICKABLE DIV
 [data-href]{
 	cursor: pointer;
+}
+
+// Heroe image for home
+
+img.image-heroe {
+	width: 100%;
+	height: auto;
+}
+
+.page-block {
+	min-height: 400px;
 }
