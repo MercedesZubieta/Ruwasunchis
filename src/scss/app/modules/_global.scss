@@ -4,8 +4,8 @@ body {
 	height: 100%;
 	background-color: $body-bg;
 	// overflow-x: hidden;
-	&::-webkit-scrollbar { 
-    display: none; 
+	&::-webkit-scrollbar {
+    display: none;
 	}
 }
 
@@ -60,13 +60,26 @@ $user-card-width: 70px;
 	cursor: pointer;
 }
 
-// Heroe image for home
+// Heroe image
 
 img.image-heroe {
 	width: 100%;
 	height: auto;
 }
 
+
+// Page Blocks
+
 .page-block {
 	min-height: 400px;
+}
+
+
+// Home: Involucrate
+
+.cuadrado-involucrate {
+	width:215px;
+	height:190px;
+	background: black;
+	margin: 0 auto;
 }

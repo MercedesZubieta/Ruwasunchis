@@ -4673,6 +4673,13 @@ img.image-heroe {
   min-height: 400px;
 }
 
+.cuadrado-involucrate {
+  width: 215px;
+  height: 190px;
+  background: black;
+  margin: 0 auto;
+}
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
@@ -5429,6 +5436,38 @@ html.no-js .flex-space-between .left {
 }
 html.no-js .flex-space-between .right {
   float: right;
+}
+
+footer {
+  padding: 60px;
+}
+
+.made-by-laboratoria {
+  height: 60px;
+}
+
+.logo-laboratoria-footer {
+  float: left;
+  height: 100%;
+  width: 60px;
+  line-height: 60px;
+  background: orange;
+  font-size: 2em;
+  text-align: center;
+  line-height: 60px;
+}
+
+.hover-footer-by-laboratoria {
+  float: left;
+  height: 100%;
+  width: 210px;
+  text-align: left;
+  background: #F2F2F2;
+  padding: 10px;
+}
+.hover-footer-by-laboratoria p {
+  padding: 0;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
