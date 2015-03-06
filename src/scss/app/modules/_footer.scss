@@ -1,9 +1,23 @@
 footer {
-  padding: 60px;
+  padding: 20px;
+  min-height: 100px !important;
+  ul {
+   list-style:none;
+   padding-right: 21px;
+   li {
+    font-size: 1.5em;
+    color: $gray-darkest;
+    &:last-of-type {
+      color: $gray-dark;
+    }
+   }
+   }
 }
 
 .made-by-laboratoria {
   height:60px;
+  margin-left: 35px;
+  color: $gray-darkest;
 }
 
 .logo-laboratoria-footer {
@@ -17,8 +31,10 @@ footer {
   line-height:60px;
 }
 
-.hover-footer-by-laboratoria {
+.hover-made-by-laboratoria {
+  display:none;
   float:left;
+  color: $gray-dark;
   height:100%;
   width:210px;
   text-align:left;
@@ -28,4 +44,11 @@ footer {
     padding: 0;
     line-height:20px;
   }
+  span {
+    color: $brand-success;
+  }
+}
+
+.made-by-laboratoria:hover .hover-made-by-laboratoria {
+  display: inherit;
 }

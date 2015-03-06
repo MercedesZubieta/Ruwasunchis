@@ -55,6 +55,14 @@ header {
 		a {
 			font-weight: 200;
 			font-size: 1.3em;
+			color: $gray-dark;
+			&:hover {
+			text-decoration: none;
+			color: $brand-success;
+			}
+			&.selected {
+				color: $brand-success;
+			}
 		}
 	}
 }

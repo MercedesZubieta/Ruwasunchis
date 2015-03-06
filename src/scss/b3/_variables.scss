@@ -8,15 +8,16 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #3E3F40 !default;
-$gray-darker:            #3E3F40 !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   #7D7E7F !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           #F0F0F0 !default; // #eee
+$gray-base:              #808080 !default;
+$gray-darker:            #4e4e4e !default; // #222
+$gray-dark:              #8E8E8E !default;   // #333
+$gray-darkest:					 #4D4D4D;
+$gray:                   #f2f2f2 !default; // #555
+$gray-light:             #808080 !default; // #777
+$gray-lighter:           #fff !default; // #eee
 
 $brand-primary:         darken(#428bca, 6.5%) !default;
-$brand-success:         #5cb85c !default;
+$brand-success:         #faba2a !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
@@ -25,9 +26,15 @@ $blue-base: #3A4959;
 
 $blue-darker:            lighten($blue-base, 0%) !default; // #222
 $blue-dark:              lighten($blue-base, 21%) !default;   // #333
-$blue:                   lighten($blue-base, 35%) !default; // #555
+$blue:                   #6B9ACC !default; // #555
 $blue-light:             lighten($blue-base, 63%) !default;   // #999
 $blue-lighter:           lighten($blue-base, 70%) !default; // #eee
+
+// Social Colors
+$facebook-blue:			 #3C5A96;
+$youtube-red: 			 #e52d27;
+$twitter-blue:			 #4099FF;
+$mail-green:			 #86B751;
 
 // EBM:REF
 $brand-inverse: 				#081A26 !default;
@@ -44,60 +51,60 @@ $color-instagram: 	#4187FB !default;
 
 // COLOR LISTS
 // EBM:REF
-$grayscale-list: 
-	$gray-darker, 
-	$gray-dark, 
-	$gray, 
-	$gray-light, 
-	$gray-lighter, 
+$grayscale-list:
+	$gray-darker,
+	$gray-dark,
+	$gray,
+	$gray-light,
+	$gray-lighter,
 	#fff;
 
-$brand-colors-list: 
-	$brand-primary, 
-	$brand-success, 
-	$brand-info, 
-	$brand-warning, 
-	$brand-danger, 
-	$blue-darker, 
-	$blue-dark, 
-	$blue, 
-	$blue-light, 
+$brand-colors-list:
+	$brand-primary,
+	$brand-success,
+	$brand-info,
+	$brand-warning,
+	$brand-danger,
+	$blue-darker,
+	$blue-dark,
+	$blue,
+	$blue-light,
 	$blue-lighter;
 
-$social-colors-list: 
+$social-colors-list:
 	$color-facebook,
-	$color-twitter, 	
-	$color-pinterest, 
+	$color-twitter,
+	$color-pinterest,
 	$color-google-plus,
 	$color-youtube,
 	$color-instagram,
-	$color-linkedin; 	
+	$color-linkedin;
 
 // COLOR SUFIX's
 // EBM:REF
-$grayscale-sufix-list: 
-	'gray-darker', 
-	'gray-dark', 
-	'gray', 
-	'gray-light', 
-	'gray-lighter', 
+$grayscale-sufix-list:
+	'gray-darker',
+	'gray-dark',
+	'gray',
+	'gray-light',
+	'gray-lighter',
 	'white';
 
-$brand-colors-sufix-list: 
-	'primary', 
-	'success', 
-	'info', 
-	'warning', 
+$brand-colors-sufix-list:
+	'primary',
+	'success',
+	'info',
+	'warning',
 	'danger',
-	'blue-darker', 
-	'blue-dark', 
-	'blue', 
-	'blue-light', 
+	'blue-darker',
+	'blue-dark',
+	'blue',
+	'blue-light',
 	'blue-lighter';
 
-$social-colors-sufix-list: 
+$social-colors-sufix-list:
 	'facebook',
-	'twitter',	
+	'twitter',
 	'pinterest',
 	'google-plus',
 	'youtube',
@@ -105,10 +112,10 @@ $social-colors-sufix-list:
 	'linkedin';
 
 // EBM:REF
-$breakpoints-sufix-list:  
-	'xs', 
-	'sm', 
-	'md', 
+$breakpoints-sufix-list:
+	'xs',
+	'sm',
+	'md',
 	'lg';
 
 // EBM:REF
@@ -119,7 +126,7 @@ $sizes-list:
 	"xl";
 
 // EBM:REF
-$text-elements-list: 
+$text-elements-list:
   "h1",
   "h2",
   "h3",
