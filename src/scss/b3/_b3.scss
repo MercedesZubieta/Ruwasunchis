@@ -22,7 +22,7 @@
 	"buttons";
 
 // Components
-// @import
+@import "close";
 // "component-animations",
 // 	"dropdowns",
 // 	"button-groups",
@@ -38,16 +38,16 @@
 // 	"thumbnails",
 // 	"alerts",
 // 	"progress-bars",
-// "media";
+// "media",
 // 	"list-group",
 // "responsive-embed"
 // 	"panels",
 // 	"wells",
-// 	"close";
+
 
 // Components w/ JavaScript
-// @import 
-// "modals",
+@import 
+"modals";
 // "tooltip",
 // "popovers",
 // "carousel";

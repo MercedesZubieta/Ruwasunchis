@@ -86,7 +86,7 @@ img.image-heroe {
 		border-radius: 7px;
 		padding: 14px;
 		margin: 0 auto 56px;
-		transition: all 0.3s ease;
+		transition: background 0.3s ease, color 0.3s ease;
 		&.btn-success2 {
 			color: $brand-success;
 			border: 1px solid $brand-success;
@@ -245,9 +245,21 @@ h2.home {
 // Nosotros
 
 .nosotros {
+	img {
+		padding-bottom: 35px;
+		height: 150px;
+		width: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	h2 {
+		color: $gray-darkest;
+		font-weight: 200;
+	}
 	p {
 		width: 60%;
 		margin: 0 auto;
+		font-weight: 500;
 	}
 }
 
@@ -276,59 +288,106 @@ h2.home {
 
 // Social
 
-.social-section {
-	ul {
-		width: 80%;
-		margin: 0 auto !important;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		li {
-			border: 4px solid #fff;
-			float: left;
-			width: 25%;
-			height:24%;
-			position: relative;
-			background: $gray-darkest;
-			&:before {
-				content: "";
-				display: block;
-				padding-top: 100%;
-			}
-			&.facebook:hover {
-				background: $facebook-blue;
-			}
-			&.youtube:hover {
-				background: $youtube-red;
-			}
-			&.twitter:hover {
-				background: $twitter-blue;
-			}
-			&.mail:hover {
-				background: $mail-green;
-			}
-			.content{
-			position:  absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
+	.social {
+		> li {
+			a {
+				width: 210px;
+				height: 210px;
+				border: 2px solid $gray-lighter;
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+				&:hover {
+					.overlay {
+						@include transform(translateX(0));
+						@include transition(all 0.2s ease-in-out);
+					}
+				}
+				.overlay {
+					position: absolute;
+					width: 210px;
+					height: 100%;
+					top:0;
+					z-index: 10;
+					padding: $grid-gutter-width / 2;
+					@include transform(translateX(-100%));
+					@include transition(all 0.2s ease-in-out);
+				}
+				h3 {
+					position: absolute;
+					top: $grid-gutter-width / 2;
+					left: $grid-gutter-width / 2;
+					margin: 0;
+					text-align: left;
+					font-size: $font-size-h3;
+					color: white;
+					@include book;
+					z-index: 30;
+				}
+				.icon {
+					position: absolute;
+					display: block;
+					bottom: 0;
+					right: 0;
+					padding: 21px;
+					z-index: 30;
+				}
+				&.facebook {
+					.overlay {
+						background: $facebook-blue;
+					}
+					.icon {
+						background: url(/assets/img/svg/facebook.svg) no-repeat;
+					}
+				}
+				&.youtube {
+					.overlay {
+						background: $youtube-red;
+					}
+					.icon {
+						background: url(/assets/img/svg/youtube.svg) no-repeat;
+					}
+				}
+				&.twitter {
+					.overlay {
+						background: $twitter-blue;
+					}
+					.icon {
+						background: url(/assets/img/svg/twitter.svg) no-repeat;
+					}
+				}
+				&.contact {
+					.overlay {
+						background: $mail-green;
+					}
+					.icon {
+						background: url(/assets/img/svg/mail.svg) no-repeat;
+					}
+				}
 			}
 		}
 	}
-	h3 {
-		color: #fff;
+
+// Modals
+
+.modal-body {
+	padding: 0 42px;
+	h2 {
+		padding-bottom: 35px;
+		color: $gray-darkest;
 		font-weight: 300;
-		font-size: 2em;
-		margin: 0;
-		padding: 14px 0 0 21px;
+		text-align: center;
 	}
-	img {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		padding: 14px;
+	p {
+		padding: 0;
+		padding-bottom: 7px;
+		font-size: 1em;
+		text-align: center;
+	}
+	button {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 21px;
 	}
 }
 

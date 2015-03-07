@@ -9,16 +9,12 @@ header,
 	padding: 0 $container-fluid;
 	min-height: $header-height-control;
 	.left,
-	.center,
 	.right {
 		min-height: $header-height-control;
 		@include flex-middle;
 	}
 	.left {
 
-	}
-	.center {
-		text-align: center;
 	}
 	.right {
 
@@ -55,6 +51,9 @@ header {
 		a {
 			font-weight: 200;
 			font-size: 1.3em;
+			@media #{$md-down} {
+				font-size: 1em;
+			}
 			color: $gray-dark;
 			&:hover {
 			text-decoration: none;
