@@ -4832,14 +4832,52 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-img.image-heroe {
+.image-heroe, .miniimage-heroe {
   width: 100%;
-  height: auto;
+  min-height: 90%;
+  margin-bottom: 42px;
+}
+
+.miniimage-heroe {
+  min-height: 50%;
 }
 
 .page-block {
   min-height: 300px;
   padding: 70px 0;
+}
+.page-block.page-block-mini {
+  padding: 121px 0 21px;
+  min-height: 0;
+}
+.page-block.page-block-less-padding-top {
+  padding-top: 35px;
+}
+.page-block h2 {
+  padding-bottom: 35px;
+  font-weight: 400;
+  font-size: 2.6em;
+}
+.page-block h3 {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 2.2em;
+  padding-bottom: 21px;
+  color: #4D4D4D;
+}
+.page-block a {
+  color: inherit;
+}
+.page-block a:hover {
+  text-decoration: none;
+  color: #faba2a;
+}
+.page-block img {
+  margin-bottom: 35px;
+}
+
+.page-block.bg-gray a:hover {
+  color: #6B9ACC;
 }
 
 .bg-gray-darkest {
@@ -4894,12 +4932,6 @@ h2.home {
   padding-bottom: 27px;
 }
 
-.nuestro-trabajo img {
-  padding-bottom: 14px;
-}
-.nuestro-trabajo h3 {
-  font-weight: 300;
-}
 .nuestro-trabajo p {
   width: 52%;
   margin: 0 auto;
@@ -4988,7 +5020,6 @@ h2.home {
 }
 
 .nosotros img {
-  padding-bottom: 35px;
   height: 150px;
   width: auto;
   display: block;
@@ -5012,15 +5043,12 @@ h2.home {
   background-position: center !important;
   margin-bottom: 21px;
 }
-.blog-posts-home h3 {
-  margin: 0 auto;
-  font-weight: 300;
-  font-size: 2.2em;
-  padding-bottom: 21px;
-  color: #4D4D4D;
-}
 .blog-posts-home p {
   margin: 0 auto;
+}
+
+.social-section .container {
+  padding: 0;
 }
 
 .social > li a {
@@ -5122,6 +5150,42 @@ h2.home {
   margin: 0 auto;
   display: block;
   margin-bottom: 21px;
+}
+
+.nosotros-mision-vision img {
+  width: 30%;
+}
+.nosotros-mision-vision h2 {
+  padding-bottom: 35px;
+}
+.nosotros-mision-vision p {
+  width: 80%;
+  margin: 0 auto;
+}
+.nosotros-equipo img {
+  width: 70%;
+  margin: 0 21px;
+}
+.nosotros-reconocimientos-logros h2 {
+  padding-bottom: 35px;
+}
+
+.blog-post-title h3 {
+  padding-left: 56px;
+}
+
+.blog h2 {
+  font-size: 2em;
+  padding: 14px 0;
+  margin: 0;
+}
+.blog h3 {
+  font-size: 1em;
+}
+
+.programa p {
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 a.btn.form-control,
@@ -5893,6 +5957,7 @@ footer {
   padding: 20px;
   min-height: 100px !important;
   border-top: 1px solid #f2f2f2;
+  margin-top: 35px;
 }
 footer ul {
   list-style: none;

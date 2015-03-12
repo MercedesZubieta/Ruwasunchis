@@ -62,17 +62,58 @@ $user-card-width: 70px;
 
 // Heroe image
 
-img.image-heroe {
+.image-heroe {
 	width: 100%;
-	height: auto;
+	min-height: 90%;
+	margin-bottom: 42px;
 }
 
+.miniimage-heroe {
+	@extend .image-heroe;
+	min-height: 50%;
+	
+}
 
 // Page Blocks
 
 .page-block {
 	min-height: 300px;
 	padding: 70px 0;
+	&.page-block-mini {
+		padding: 121px 0 21px;
+		min-height: 0;
+	}
+	&.page-block-less-padding-top {
+		padding-top: 35px;
+	}
+	h2 {
+		padding-bottom: 35px;
+		font-weight: 400;
+		font-size: 2.6em;
+	}
+	h3 {
+		margin: 0 auto;
+		font-weight: 300;
+		font-size: 2.2em;
+		padding-bottom: 21px;
+		color: $gray-darkest;
+	}
+	a {
+		color: inherit;
+		&:hover {
+			text-decoration: none;
+			color: $brand-success;
+		}
+	}
+	img {
+		margin-bottom: 35px;
+	}
+}
+
+.page-block.bg-gray {
+	a:hover {
+		color: $blue;
+	}
 }
 
 // very dark gray background
@@ -137,12 +178,6 @@ h2.home {
 // Nuestro trabajo
 
 .nuestro-trabajo {
-	img {
-		padding-bottom: 14px;
-	}
-	h3 {
-		font-weight: 300;
-	}
 	p {
 		width: 52%;
 		margin: 0 auto;
@@ -246,7 +281,6 @@ h2.home {
 
 .nosotros {
 	img {
-		padding-bottom: 35px;
 		height: 150px;
 		width: auto;
 		display: block;
@@ -274,13 +308,6 @@ h2.home {
 		background-position: center !important;
 		margin-bottom: 21px;
 	} 
-	h3 {
-		margin: 0 auto;
-		font-weight: 300;
-		font-size: 2.2em;
-		padding-bottom: 21px;
-		color: $gray-darkest;
-	}
 	p {
 		margin:0 auto;
 	}
@@ -288,6 +315,9 @@ h2.home {
 
 // Social
 
+	.social-section .container {
+		padding: 0;
+	}
 	.social {
 		> li {
 			a {
@@ -391,7 +421,62 @@ h2.home {
 	}
 }
 
+///////// Nosotros
+
+.nosotros {
+		&-mision-vision {
+		img {
+			width: 30%;
+		}
+		h2 {
+			padding-bottom: 35px;
+		}
+		p {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+	&-equipo {
+		img {
+			width: 70%;
+			margin: 0 21px;
+		}
+	}
+	&-reconocimientos-logros {
+		h2 {
+			padding-bottom: 35px;
+		}
+	}
+}
+
+
+
 ///////// Blog
+
+.blog-post-title {
+	h3 {
+		padding-left: 56px;
+	}
+}
+
+.blog {
+	h2 {
+		font-size: 2em;
+		padding: 14px 0;
+		margin: 0;
+	}
+	h3 {
+		font-size: 1em;
+	}
+}
+///////// Programa
+
+.programa {
+	p {
+		font-size: 1.2em;
+		font-weight: 400;
+	}
+}
 
 // &:first-of-type::first-letter {
 // 			font-weight: bold;
