@@ -32,11 +32,6 @@ app/assets/img/*.png
 app/assets/img/*.JPEG
 app/assets/img/*.gif
 app/assets/img/*.tiff
-src/img/*.jpg
-src/img/*.png
-src/img/*.gif
-src/img/*.JPEG
-src/img/*.tiff
 
 ## Sass
 .sass-cache
