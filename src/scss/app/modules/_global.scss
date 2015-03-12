@@ -45,7 +45,7 @@ $user-card-width: 70px;
 	.overlay,
 	.hero-unit-pic {
 		@include position(absolute, 0 0 0 0);
-		height: $video-bg-height;
+		overflow: hidden;
 	}
 	.hero-unit-pic {
 		img {

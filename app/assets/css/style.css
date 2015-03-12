@@ -4821,7 +4821,7 @@ body::-webkit-scrollbar {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 491px;
+  overflow: hidden;
 }
 .hero-unit .hero-unit-pic img {
   width: 100%;

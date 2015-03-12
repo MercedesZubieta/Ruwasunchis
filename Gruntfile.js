@@ -396,7 +396,7 @@ module.exports = function (grunt) {
         tasks: 'coffee:dev'
       },
       responsive_images: {
-        files: '<%= project.src %>/img/**.{jpg,gif,png}',
+        files: '<%= project.src %>/img/**.{jpg,gif,png,JPG}',
         tasks: 'responsive_images:dev'
       },
       responsive_images_extender: {
