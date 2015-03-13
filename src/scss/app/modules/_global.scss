@@ -79,8 +79,14 @@ $user-card-width: 70px;
 .page-block {
 	min-height: 300px;
 	padding: 70px 0;
+	@media screen and (max-width:$screen-sm-min) {
+		padding: 35px 0;
+	}
 	&.page-block-mini {
-		padding: 121px 0 21px;
+		padding: 126px 0 21px;
+		@media screen and (max-width:$screen-sm-min) {
+		padding: 63px 0 14px;
+	}
 		min-height: 0;
 	}
 	&.page-block-less-padding-top {
@@ -88,14 +94,24 @@ $user-card-width: 70px;
 	}
 	h2 {
 		padding-bottom: 35px;
+		@media screen and (max-width:$screen-sm-min) {
+		padding-left: 1%;
+	}
 		font-weight: 400;
 		font-size: 2.6em;
 	}
 	h3 {
 		margin: 0 auto;
 		font-weight: 300;
-		font-size: 2.2em;
+		font-size: 2em;
 		padding-bottom: 21px;
+		@media screen and (max-width:$screen-sm-min) {
+		padding-left: 1%;
+		padding-bottom: 4%;
+		@media screen and (max-width:$screen-sm-min) {
+		padding-bottom: 1%;
+	}
+	}
 		color: $gray-darkest;
 	}
 	a {
@@ -107,6 +123,17 @@ $user-card-width: 70px;
 	}
 	img {
 		margin-bottom: 35px;
+	}
+	&.nuestro-trabajo img,
+	&.areas-de-intervencion img,
+	&.otros-programas img {
+		margin-bottom: 2%;
+	}
+	&.otros-programas p {
+		margin-bottom: 2%;
+		@media screen and (max-width:$screen-sm-min) {
+		margin-bottom: 10%;
+	}
 	}
 }
 
@@ -179,11 +206,11 @@ h2.home {
 
 .nuestro-trabajo {
 	p {
-		width: 52%;
-		margin: 0 auto;
-		text-align:center;
 		font-size: 1em;
 		font-weight: 500;
+		@media screen and (max-width:$screen-sm-min){
+			padding-bottom: 42px;
+		}
 	}
 }
 
@@ -291,9 +318,11 @@ h2.home {
 		font-weight: 200;
 	}
 	p {
-		width: 60%;
+		width: 90%;
 		margin: 0 auto;
-		font-weight: 500;
+		font-weight: 300;
+		font-size: 1.4em;
+		color: $gray-darker;
 	}
 }
 
@@ -313,6 +342,11 @@ h2.home {
 	}
 }
 
+.single-blog-post-in-home {
+	@media screen and (max-width: $screen-sm-min) {
+		margin-bottom: 42px;
+	}
+}
 // Social
 
 	.social-section .container {
@@ -398,6 +432,16 @@ h2.home {
 		}
 	}
 
+// Socios
+
+.socios {
+	p {
+		width: 75%;
+		margin: 0 auto;
+		padding-bottom: 42px;
+	}
+}
+
 // Modals
 
 .modal-body {
@@ -434,6 +478,9 @@ h2.home {
 		p {
 			width: 80%;
 			margin: 0 auto;
+			@media screen and (max-width:$screen-sm-min) {
+			padding-bottom: 21px;
+			}
 		}
 	}
 	&-equipo {
@@ -455,7 +502,8 @@ h2.home {
 
 .blog-post-title {
 	h3 {
-		padding-left: 56px;
+		padding-left: 5%;
+
 	}
 }
 
@@ -488,12 +536,18 @@ $involucrate-block-height-control: 280px;
 .involucrate-block {
 	position: relative;
 	min-height: $involucrate-block-height-control;
+		@media screen and (max-width:$screen-sm-min) {
+			margin-bottom: 42px;
+		}
 	.overlay {
 		@include position(absolute, 0 0 0 0);
 		@include flex-middle-center;
 		background-color: rgba($gray-dark, 0.7);
 		color: white;
 		opacity: 0;
+			@media screen and (max-width:$screen-sm-min) {
+			opacity: 1;
+		}
 	}
 	&:hover {
 		.overlay {

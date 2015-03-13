@@ -14,6 +14,31 @@
       window.history.pushState(pathObj, '', lastPath);
       document.location.replace($(this).data('href'));
     });
+    transformicons.add('.tcon');
+  });
+
+}).call(this);
+
+(function() {
+  'use-strict';
+  $(document).ready(function() {
+    var scrollToController;
+    scrollToController = new ScrollMagic.Controller();
+    scrollToController.scrollTo(function(newpos) {
+      TweenMax.to(window, 0.5, {
+        scrollTo: {
+          y: newpos
+        }
+      });
+    });
+    $(document).on('click', 'a[href^=#]', function(e) {
+      var id;
+      id = $(this).attr('href');
+      if ($(id).length > 0 && !id.match(/nav/g) && !id.match(/carousel/g)) {
+        e.preventDefault();
+        scrollToController.scrollTo(id);
+      }
+    });
   });
 
 }).call(this);

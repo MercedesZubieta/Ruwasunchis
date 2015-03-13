@@ -18,6 +18,6 @@ $(document).ready ->
 		)
 	
 	# TRANSFORM ICONS INITIALIZE
-	# transformicons.add('.tcon')
+	transformicons.add('.tcon')
 
 	return # END ON READY

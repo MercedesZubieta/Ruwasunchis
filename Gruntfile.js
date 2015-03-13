@@ -163,14 +163,17 @@ module.exports = function (grunt) {
         files: {
           // '<%= project.assets %>/js/scripts.min.js': '<%= project.js %>', 
           '<%= project.assets %>/js/scripts.min.js': [
-            // '<%= project.src %>/js/lib/TweenMax.min.js',
-            // '<%= project.src %>/js/lib/ScrollToPlugin.js',
-            // '<%= project.src %>/js/lib/ScrollMagic.js',
+            '<%= project.src %>/js/lib/TweenMax.min.js',
+            '<%= project.src %>/js/lib/ScrollToPlugin.js',
+            '<%= project.src %>/js/lib/ScrollMagic.js',
+            '<%= project.src %>/js/lib/collapse.js',
+            '<%= project.src %>/js/lib/dropdown.js',
+            '<%= project.src %>/js/lib/transition.js',
             // '<%= project.src %>/js/lib/jquery.scrollmagic.debug.js',
             // '<%= project.src %>/js/lib/imagesloaded.pkgd.min.js',
             // '<%= project.src %>/js/lib/isotope.pkgd.min.js',
             // '<%= project.src %>/js/lib/lickity.pkgd.min.js',
-            // '<%= project.src %>/js/lib/transformicons.js',
+            '<%= project.src %>/js/lib/transformicons.js',
             '<%= project.src %>/js/lib/coffeeCompile.js'
           ]
         }
