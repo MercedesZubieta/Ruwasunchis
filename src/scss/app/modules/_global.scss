@@ -555,3 +555,57 @@ $involucrate-block-height-control: 280px;
 		}
 	}
 }
+
+
+/* 
+
+	EBM: Module
+	Share grid
+
+*/
+$share-grid-height-control: 198px;
+#share-grid {
+	a {
+		padding: 0;
+		position: relative;
+		display: block;
+		height: $share-grid-height-control;
+		overflow: hidden;
+		border: 2px solid white;
+		@media #{$sm-up} {
+			&:hover,
+			&.active {
+				.overlay {
+					@include transform(translateX(0%));
+					@include transition(all 0.2s ease-in-out);
+				}
+			}
+		}
+		@media #{$sm-down} {
+			.overlay {
+				@include transform(translateX(0%));
+			}
+		}
+	}
+	.network-name,
+	.share-icon {
+		padding: $container-fluid;
+		color: white;
+		font-size: $font-size-h3;
+		z-index: 30;
+	}
+	.overlay {
+		@include position(absolute, 0 0 0 0);
+		@media #{$sm-up} {
+			@include transform(translateX(-101%));
+		}
+		@include transition(all 0.2s ease-in-out);
+	}
+	.network-name {
+		@include position(absolute, 0 0 null 0);
+	}
+	.share-icon {
+		@include position(absolute, null 0 0 0);
+		text-align: right;
+	}
+}
