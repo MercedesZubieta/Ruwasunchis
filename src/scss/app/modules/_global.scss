@@ -33,6 +33,16 @@ $user-card-width: 70px;
 	position: relative;
 }
 
+// Fonts for the whole page
+
+h1, h2, h3, h4, li a{
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	font-family: 'Roboto Slab', serif;
+}
+
 // HERO UNIT
 .hero-unit {
 	position: relative;
