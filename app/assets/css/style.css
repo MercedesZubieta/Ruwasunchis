@@ -5677,6 +5677,14 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+h1, h2, h3, h4, li a {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
 .hero-unit {
   position: relative;
   height: 491px;
@@ -5845,7 +5853,7 @@ h2.home {
 
 .nuestro-trabajo p {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media screen and (max-width: 768px) {
   .nuestro-trabajo p {
