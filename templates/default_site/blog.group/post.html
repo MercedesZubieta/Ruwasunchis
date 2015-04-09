@@ -1,0 +1,17 @@
+{exp:channel:entries channel="blog" limit="10"}
+{embed="includes/head"}
+    <section id="blog-post">
+      <div class="container blog-post-title page-block page-block-mini">
+        <h2 class="pb-0 m-0">{title}</h2>
+        <small>{current_time format="%d %F, %Y"}</small>
+      </div>
+      <div class="image-heroe page-block" style="background:url({imagen_blog}) center center / cover no-repeat;"></div>
+      <div class="container p-0">
+        <p>{contenido_del_post}</p>
+      </div>
+      <div class="container text-center pv-35">
+        <a href="{site_url}blog" class="btn btn-success btn-outline">M&#xE1;s del blog</a>
+      </div>
+    </section>
+{/exp:channel:entries}
+{embed="includes/footer"}

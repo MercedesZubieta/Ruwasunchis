@@ -1,0 +1,14 @@
+{exp:channel:entries channel="nuestro_trabajo_en" limit="1"}
+{embed="includes/head_en"}
+    <section id="blog-post">
+      <div class="container blog-post-title page-block page-block-mini">
+        <h2 class="pb-0 m-0">{title}</h2>
+        <small>{current_time format="%F %d, %Y"}</small>
+      </div>
+      <div class="image-heroe page-block" style="background:url({nuestro_trabajo_imagen}) center center / cover no-repeat;"></div>
+      <div class="container p-0">
+        <p>{nuestro_trabajo_contenido}</p>
+      </div>
+    </section>
+{/exp:channel:entries}
+{embed="includes/footer"}

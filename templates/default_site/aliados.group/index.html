@@ -1,0 +1,49 @@
+{embed="includes/head"}
+{exp:channel:entries channel="aliados_home" limit="1"}
+    <div class="miniimage-heroe" style="background:url('{imagen_principal}') center center / cover no-repeat;"></div>
+    <section id="socios-corporativos">
+      <div class="container page-block page-block-mini page-block-less-padding-top socios">
+        <h2 class="text-center">Socios Corporativos</h2>
+        <p>{aliados_socios_corporativos}</p>
+        <ul class="grid-list grid-list-4 grid-list-2-xs pb-35">
+				{embed="includes/aliados_socios_corporativos"}
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="aliados-internacionales">
+      <div class="container-fluid bg-gray">
+        <div class="container page-block page-block-mini page-block-less-padding-top socios">
+          <h2 class="text-center">Aliados Internacionales</h2>
+          <p>{aliados_internacionales}</p>
+          <ul class="grid-list grid-list-5 grid-list-2-xs pb-35">
+					{embed="includes/aliados_internacionales"}
+        	</ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="aliados-nacionales">
+      <div class="container page-block page-block-mini page-block-less-padding-top socios">
+        <h2 class="text-center">Aliados Nacionales</h2>
+        <p>{aliados_nacionales}</p>
+        <ul class="grid-list grid-list-4 grid-list-2-xs pb-35">
+          {embed="includes/aliados_nacionales"}
+      	</ul>
+      </div>
+    </section>
+
+    <section id="empresas-colaboradoras">
+      <div class="container-fluid bg-gray">
+        <div class="container page-block page-block-mini page-block-less-padding-top socios">
+          <h2 class="text-center">Empresas Colaboradoras</h2>
+          <p>{aliados_empresas_colaboradoas}</p>
+          <ul class="grid-list grid-list-4 grid-list-2-xs pb-35">
+					{embed="includes/aliados_empresas_colaboradoras"}
+        	</ul>
+        </div>
+      </div>
+    </section>
+{/exp:channel:entries}
+{embed="includes/footer"}
