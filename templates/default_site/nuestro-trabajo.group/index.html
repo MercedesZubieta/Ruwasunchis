@@ -1,24 +1,30 @@
 {embed="includes/head"}
 
       <section id="image-heroe">
-        <div class="image-heroe" style="background:url({site_url}app/assets/img/Foto2.jpg&apos;) center center / cover no-repeat;"></div>
+        <div class="image-heroe" style="background:url({site_url}app/assets/img/Foto2.jpg) center center / cover no-repeat;"></div>
       </section>
 
       <section id="programas">
         <div class="container-fluid">
           <div class="row text-center page-block nuestro-trabajo">
             <h2>Nuestros Programas</h2>
-            {exp:channel:entries channel="nuestro_trabajo" limit="3" category="1"}
-            <div class="col-sm-4 ph-63">
-              <img src="{nuestro_trabajo_imagen}" alt="{title}" class="img-responsive" srcset="{nuestro_trabajo_imagen} 480w, {nuestro_trabajo_imagen} 720w, {nuestro_trabajo_imagen} 940w, {nuestro_trabajo_imagen} 1140w">
-              <h3><a href="{site_url}nuestro-trabajo/programa/{url_title}">{title}</a></h3>
-              <p>
-	              {exp:char_limit total="150" exact="no"}
-	              {nuestro_trabajo_introduccin}
-								{/exp:char_limit} 
-	            </p>
+            <div class="row">
+	            <div class="col-sm-10 col-sm-offset-1">
+		            {exp:channel:entries channel="nuestro_trabajo" limit="3" category="1"}
+		            <div class="col-sm-4">
+			            {nuestro_trabajo_imagen}
+		              <img src="{image:url:medium}" alt="{title}" class="img-responsive" width="100%">
+		              {/nuestro_trabajo_imagen}
+		              <h4 class="text-gray-darker capitalize pt-21"><a href="{site_url}nuestro-trabajo/programa/{url_title}">{title}</a></h4>
+		              <p>
+			              {exp:char_limit total="150" exact="no"}
+			              {nuestro_trabajo_introduccin}
+										{/exp:char_limit} 
+			            </p>
+		            </div>
+		            {/exp:channel:entries}		            
+	            </div>
             </div>
-            {/exp:channel:entries}
           </div>
 				</div>
       </section>
@@ -27,12 +33,18 @@
 	      <div class="container-fluid">
 	        <div class="row text-center page-block bg-gray">
 	          <h2>Nuestras Estrategias Transversales</h2>
-	          {exp:channel:entries channel="nuestro_trabajo" limit="3" category="2"}
-	          <div class="col-sm-4">
-	            <img src="{nuestro_trabajo_imagen}" alt="{title}" srcset="{nuestro_trabajo_imagen} 480w, {nuestro_trabajo_imagen} 720w, {nuestro_trabajo_imagen} 940w, {nuestro_trabajo_imagen} 1140w">
-	            <h3><a href="{site_url}nuestro-trabajo/programa/{url_title}">{title}</a></h3>
-	          </div>
-	          {/exp:channel:entries}
+            <div class="row">
+	            <div class="col-sm-10 col-sm-offset-1">	          
+			          {exp:channel:entries channel="nuestro_trabajo" limit="3" category="2"}
+			          <div class="col-sm-4">
+			            {nuestro_trabajo_imagen}
+		              <img src="{image:url:medium}" alt="{title}" class="img-responsive" width="100%">
+		              {/nuestro_trabajo_imagen}
+			            <h3><a href="{site_url}nuestro-trabajo/programa/{url_title}">{title}</a></h3>
+			          </div>
+			          {/exp:channel:entries}
+	            </div>
+            </div>
 	        </div>
 	      </div>
       </section>
@@ -41,12 +53,20 @@
 	      <div class="container-fluid">
 	        <div class="row text-center page-block areas-de-intervencion">
 	          <h2>Nuestras &#xC1;reas de Intervenci&#xF3;n</h2>
-	          {exp:channel:entries channel="nuestro_trabajo" limit="2" category="3"}
-	          <div class="col-sm-6">
-	            <a href="{site_url}nuestro-trabajo/programa/{url_title}"><img src="{nuestro_trabajo_imagen}" alt="{title}" class="img-responsive" srcset="{nuestro_trabajo_imagen} 480w, {nuestro_trabajo_imagen} 720w, {nuestro_trabajo_imagen} 940w, {nuestro_trabajo_imagen} 1140w"></a>
-	            <h3><a href="{site_url}nuestro-trabajo/programa/{url_title}">{title}</a></h3>
-	          </div>
-	          {/exp:channel:entries}
+            <div class="row">
+	            <div class="col-sm-10 col-sm-offset-1">	 	          
+			          {exp:channel:entries channel="nuestro_trabajo" limit="2" category="3"}
+			          <div class="col-sm-6">
+			            <a href="{site_url}nuestro-trabajo/programa/{url_title}">
+				            {nuestro_trabajo_imagen}
+			              <img src="{image:url:medium}" alt="{title}" class="img-responsive" width="100%">
+			              {/nuestro_trabajo_imagen}
+				          </a>
+			            <h3><a href="{site_url}nuestro-trabajo/programa/{url_title}">{title}</a></h3>
+			          </div>
+			          {/exp:channel:entries}
+	            </div>
+            </div>
 	        </div>
 	      </div>
       </section>

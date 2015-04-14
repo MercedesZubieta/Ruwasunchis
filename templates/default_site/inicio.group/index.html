@@ -14,7 +14,7 @@
         <div class="row page-block flex-middle-center text-center bienvenidos">
           <h2 class="home">{titulo_seccion_1}</h2>
           <p>{introduccin_seccion_1}</p>
-          <a href="{link_seccin_1}" class="btn btn-outline2 btn-success2">Conoce más sobre nosotros</a>
+          <a href="{site_url}nosotros" class="btn btn-outline2 btn-success2">Conoce más sobre nosotros</a>
         </div>
       </div>
     </section>
@@ -25,25 +25,25 @@
           <div class="col-xs-12">
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="home">Nuestro Trabajo</h2>
+                <h2 class="home mt-0 pb-70">Nuestro Trabajo</h2>
               </div>
             </div>
           </div>
-          <div class="col-xs-12">
+          <div class="col-xs-10">
             <div class="row">
               <div class="col-sm-4">
-                <img src="{site_url}app/assets/img/svg/programas.svg" alt="" class="ignore-srcset">
-                <h3>{programas_titulo}</h3>
+                <img src="{site_url}app/assets/img/svg/programas.svg" alt="" class="ignore-srcset mb-21">
+                <h4 class="text-gray-darker">{programas_titulo}</h4>
                 <p>{programas_intro}</p>
               </div>
               <div class="col-sm-4">
-                <img src="{site_url}app/assets/img/svg/estrategias.svg" alt="" class="ignore-srcset">
-                <h3>{estrategia_titulo}</h3>
+                <img src="{site_url}app/assets/img/svg/estrategias.svg" alt="" class="ignore-srcset mb-21">
+                <h4 class="text-gray-darker">{estrategia_titulo}</h4>
                 <p>{estrategia_intro}</p>
               </div>
               <div class="col-sm-4">
-                <img src="{site_url}app/assets/img/svg/areas-de-intervencion.svg" alt="" class="ignore-srcset">
-                <h3>{areas_de_intervencin_titulo}</h3>
+                <img src="{site_url}app/assets/img/svg/areas-de-intervencion.svg" alt="" class="ignore-srcset mb-21">
+                <h4 class="text-gray-darker">{areas_de_intervencin_titulo}</h4>
                 <p>{areas_de_intervencin_intro}</p>
               </div>
             </div>
@@ -53,41 +53,45 @@
     </section>
 
     <section id="involucrate">
-      <div class="container-fluid pv-42" id="involucrate">
+      <div class="container-fluid pv-70" id="involucrate">
         <h2 class="home text-center">Involúcrate</h2>
         <div class="row">
-          <div class="col-md-3">
-            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto1})">
-              <div class="overlay">
-                <h3>{involucrate_titulo1}</h3>
-                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#beca-nino">Beca</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto2})">
-              <div class="overlay">
-                <h3>{involucrate_titulo2}</h3>
-                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#beca-joven">Beca</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto3})">
-              <div class="overlay">
-                <h3>{involucrate_titulo3}</h3>
-                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#voluntario">Beca</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto4})">
-              <div class="overlay">
-                <h3>{involucrate_titulo4}</h3>
-                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#red-empresas">Beca</a>
-              </div>
-            </div>
-          </div>
+	        <div class="col-sm-10 col-sm-offset-1">
+	        	<div class="row pb-42">
+	          <div class="col-md-3">
+	            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto1})">
+	              <div class="overlay">
+	                <h3>{involucrate_titulo1}</h3>
+	                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#beca-nino">Dona</a>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-md-3">
+	            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto2})">
+	              <div class="overlay">
+	                <h3>{involucrate_titulo2}</h3>
+	                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#beca-joven">Dona</a>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-md-3">
+	            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto3})">
+	              <div class="overlay">
+	                <h3>{involucrate_titulo3}</h3>
+	                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#voluntario">Participa</a>
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-md-3">
+	            <div class="bg-img-block involucrate-block" style="background-image: url({involucrate_foto4})">
+	              <div class="overlay">
+	                <h3>{involucrate_titulo4}</h3>
+	                <a href="" class="btn btn-outline btn-sm btn-gray-lighter" data-toggle="modal" data-target="#red-empresas">Inscribete</a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	        </div>
         </div>
       </div>
     </section>
@@ -117,19 +121,24 @@
           <div class="row page-block blog-posts-home ph-21">
             <div class="col-xs-12">
               <h2 class="home text-center">Blog</h2>
-              <div class="row">
-	              {exp:channel:entries channel="blog" limit="4" category="8"}
-                <div class="col-sm-3 ph-42 single-blog-post-in-home">
-                  <div class="blog-post-image" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url({imagen_blog});"></div>
-                  <h3><a href="{site_url}/blog/post/{url_title}">{title}</a></h3>
-                  <p>
-	                  {exp:char_limit total="150" exact="no"}
-	                  {introduccin_post}
-	                  {/exp:char_limit}
-	                </p>
-                </div>
-                {/exp:channel:entries}
-              </div>
+			        <div class="row">
+				        <div class="col-sm-10 col-sm-offset-1">              
+			              <div class="row">
+				              {exp:channel:entries channel="blog" limit="4" category="8"}
+			                <div class="col-sm-3 single-blog-post-in-home">
+			                  <div class="blog-post-image" style="background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url({imagen_blog});"></div>
+			                  <h3><a href="{site_url}/blog/post/{url_title}">{title}</a></h3>
+			                  <p class="mb-14">
+				                  {exp:char_limit total="150" exact="no"}
+				                  {introduccin_post}
+				                  {/exp:char_limit}
+				                </p>
+				                <small><a href="{site_url}/blog/post/{url_title}">Lee más →</a></small>
+			                </div>
+			                {/exp:channel:entries}
+			              </div>
+				        </div>
+			        </div>
             </div>
           </div>
         </div>
@@ -141,22 +150,22 @@
           <div class="container text-white">
             <h2>Encontrémonos:</h2>
             <div id="share-grid" class="grid-list grid-list-4 grid-list-2-sm grid-list-1-xs">
-              <a href="#" class="grid-list-item">
+              <a href="https://www.facebook.com/ruwasunchis" class="grid-list-item">
                 <h3 class="network-name">Comenta</h3>
                 <div class="share-icon"><i class="icon-facebook"></i></div>
                 <div class="overlay bg-facebook"></div>
               </a>
-              <a href="#" class="grid-list-item">
+              <a href="https://www.youtube.com/user/Ruwasunchis" class="grid-list-item">
                 <h3 class="network-name">Mira</h3>
                 <div class="share-icon"><i class="icon-you-tube"></i></div>
                 <div class="overlay bg-youtube"></div>
               </a>
-              <a href="#" class="grid-list-item">
+              <a href="https://twitter.com/Ruwasunchis" class="grid-list-item">
                 <h3 class="network-name">Twittea</h3>
                 <div class="share-icon"><i class="icon-twitter"></i></div>
                 <div class="overlay bg-twitter"></div>
               </a>
-              <a href="#" class="grid-list-item">
+              <a href="mailto:info@ruwasunchis.org" class="grid-list-item">
                 <h3 class="network-name">Contacta</h3>
                 <div class="share-icon"><i class="icon-email-at"></i></div>
                 <div class="overlay bg-primary"></div>

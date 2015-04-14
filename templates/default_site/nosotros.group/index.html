@@ -20,17 +20,17 @@
     </section>
 
     <section id="equipo">
-      <div class="container-fluid bg-gray ">
+      <div class="container-fluid bg-gray pb-14">
         <div class="row text-center page-block nosotros-equipo pb-14">
           <h2>Equipos</h2>
           <div class="col-xs-6 text-right pb-21">
-            <img src="{imagenes_equipos1}" alt="" srcset="{imagenes_equipos1} 480w, {imagenes_equipos1} 720w, {imagenes_equipos1} 940w, {imagenes_equipos1} 1140w" width="491">
+            <img src="{imagenes_equipos1}" alt="" >
           </div>
           <div class="col-xs-6 text-left pb-21">
-            <img src="{imgenes_equipos_2}" alt="" srcset="{imgenes_equipos_2} 480w, {imgenes_equipos_2} 720w, {imgenes_equipos_2} 940w, {imgenes_equipos_2} 1140w" width="491">
+            <img src="{imgenes_equipos_2}" alt="" >
           </div>
         </div>
-        <div class="container text-left nosotros pb-35">
+        <div class="container text-center nosotros pb-70">
           <p>{equipo_introduccion}</p>
         </div>
       </div>
@@ -42,8 +42,8 @@
         <div class="row page-block text-center nosotros-reconocimientos-logros">
           <h2>Reconocimientos y logros</h2>
           <ul class="grid-list grid-list-4 grid-list-2-xs">
-	          {exp:channel:entries channel="nosotros" limit="1"}
-            <li><a href="{link_reconocimiento}"><img src="{imagen_reconocimeitno}" class="ignore-srcset" alt="{title}"></a></li>
+	          {exp:channel:entries channel="reconocimiento" limit="6"}
+            <li><a href="{link_reconocimiento}"><img src="{imagen_reconocimeitno}" class="ignore-srcset" alt="{title}" width="100%"></a></li>
             {/exp:channel:entries}
           </ul>
         </div>
