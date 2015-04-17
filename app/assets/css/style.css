@@ -7357,6 +7357,8 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides img {
   height: auto;
+  position: relative;
+  top: -153px;
 }
 .flex-viewport {
   height: 300px !important;
