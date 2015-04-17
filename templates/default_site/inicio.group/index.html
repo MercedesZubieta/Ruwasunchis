@@ -8,7 +8,6 @@
         </div>
       </div>
     </section>
-
     <section id="bienvenidos" class="bg-gray">
       <div class="container-fluid">
         <div class="row page-block flex-middle-center text-center bienvenidos">
@@ -18,7 +17,8 @@
         </div>
       </div>
     </section>
-     <section id="mision-vision">
+    {exp:channel:entries channel="nosotros" limit="1"}
+    <section id="mision-vision">
       <div class="container">
         <div class="row page-block text-center nosotros-mision-vision">
           <div class="col-sm-6 mt-14">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </section>
-
+    {/exp:channel:entries}
     <section id="nuestro-trabajo">
       <div class="container-fluid"> <!-- 3rd Section: Nuestro Trabajo -->
         <div class="row text-center page-block bg-gray flex-middle-center nuestro-trabajo">
