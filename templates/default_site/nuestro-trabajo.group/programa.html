@@ -8,11 +8,13 @@
       <div class="container-fluid ph-0">
         <div class="flexslider">
           <ul class="slides">
+            {exp:channel:entries channel="nuestro_trabajo" limit="3" category="2"}
             <li data-thumb="slide1-thumb.jpg">
               {programas_imagen}
-              <img src="{site_url}app/assets/img/z9-720.jpg" />
+              <img src="{image:url:large}" />
               {/programas_imagen}
             </li>
+            {/exp:channel:entries}
           </ul>
         </div>
       </div>
