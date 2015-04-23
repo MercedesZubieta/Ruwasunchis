@@ -9,11 +9,11 @@
         <div class="flexslider">
           <ul class="slides">
             {exp:channel:entries channel="nuestro_trabajo" limit="3" category="2"}
+            {programas_imagen}
             <li data-thumb="slide1-thumb.jpg">
-              {programas_imagen}
               <img src="{image:url:large}" />
-              {/programas_imagen}
             </li>
+            {/programas_imagen}
             {/exp:channel:entries}
           </ul>
         </div>
