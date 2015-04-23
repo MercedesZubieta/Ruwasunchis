@@ -7358,10 +7358,10 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides img {
   height: auto;
   position: relative;
-  top: -153px;
+  top: -199px;
 }
 .flex-viewport {
-  height: 300px !important;
+  height: 360px !important;
   max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
