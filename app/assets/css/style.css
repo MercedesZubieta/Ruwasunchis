@@ -6175,7 +6175,7 @@ h2.home {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  background-color: rgba(142, 142, 142, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   opacity: 0;
 }
