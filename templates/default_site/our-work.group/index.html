@@ -10,8 +10,10 @@
             <h2>Our Programs</h2>
             {exp:channel:entries channel="nuestro_trabajo_en" limit="3" category="1"}
             <div class="col-sm-4 ph-63">
-              <img src="{nuestro_trabajo_imagen}" alt="{title}" class="img-responsive" srcset="{nuestro_trabajo_imagen} 480w, {nuestro_trabajo_imagen} 720w, {nuestro_trabajo_imagen} 940w, {nuestro_trabajo_imagen} 1140w">
-              <h3><a href="{site_url}nuestro-trabajo/program/{url_title}">{title}</a></h3>
+              {nuestro_trabajo_imagen}
+              <img src="{image:url:medium}" alt="{title}" class="img-responsive" width="100%">
+              {/nuestro_trabajo_imagen}
+              <h4><a href="{site_url}nuestro-trabajo/program/{url_title}">{title}</a></h4>
               <p>
 	              {exp:char_limit total="150" exact="no"}
 	              {nuestro_trabajo_introduccin}
