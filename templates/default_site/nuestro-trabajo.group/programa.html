@@ -6,14 +6,14 @@
         <small>{current_time format="%d %F, %Y"}</small>
       </div>
 
+      <div class="main-gallery">
         {exp:channel:entries channel="nuestro_trabajo" limit="3" category="1|2|3"}
         {programas_imagen}
-      <div class="main-gallery">
         <div class="gallery-cell bg-img-block" style="background-image: url({image:url:large}); height: 350px;"> 
         </div>
-      </div>
         {/programas_imagen}
         {/exp:channel:entries}
+      </div>
 
 
 
