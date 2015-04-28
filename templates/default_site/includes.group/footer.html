@@ -29,11 +29,13 @@
     // </script>
     <script src="{site_url}app/assets/js/modal.js"></script>
     <script>
-      $('.main-gallery').flickity({
+      $(document).ready(function(){
+        $('.main-gallery').flickity({
           // options
           cellAlign: 'left',
           contain: true
         });
+      });
     </script>
   </body>
 </html>
