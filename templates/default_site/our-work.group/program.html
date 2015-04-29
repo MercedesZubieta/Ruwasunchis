@@ -5,18 +5,13 @@
         <h2 class="pb-0 m-0">{title}</h2>
         <small>{current_time format="%F %d, %Y"}</small>
       </div>
-      <div class="container-fluid ph-0">
-        <div class="flexslider">
-          <ul class="slides">
-            {exp:channel:entries channel="nuestro_trabajo" limit="3" category="1|2|3"}
-            {programas_imagen}
-            <li data-thumb="slide1-thumb.jpg">
-              <img src="{image:url:large}" />
-            </li>
-            {/programas_imagen}
-            {/exp:channel:entries}
-          </ul>
+     <div class="main-gallery">
+        {exp:channel:entries channel="our_work" limit="3" category="1|2|3"}
+        {programas_imagen}
+        <div class="gallery-cell bg-img-block" style="background-image: url({image:url:large}); height: 350px;"> 
         </div>
+        {/programas_imagen}
+        {/exp:channel:entries}
       </div>
       <div class="container p-0">
         <p>{nuestro_trabajo_contenido}</p>
