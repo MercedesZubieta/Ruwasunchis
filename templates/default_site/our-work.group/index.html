@@ -31,7 +31,9 @@
 	          <h2>Our Transversal Strategies</h2>
 	          {exp:channel:entries channel="nuestro_trabajo_en" limit="3" category="2"}
 	          <div class="col-sm-3">
-	            <img src="{image:url:medium}" alt="{title}">
+	          	{nuestro_trabajo_imagen}
+	            	<img src="{image:url:medium}" alt="{title}">
+	            {/nuestro_trabajo_imagen}
 	            <h3><a href="{site_url}our-work/program/{url_title}">{title}</a></h3>
 	          </div>
 	          {/exp:channel:entries}
