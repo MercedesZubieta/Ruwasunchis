@@ -5803,6 +5803,10 @@ p {
   background: #4D4D4D;
 }
 
+.areas-imagen {
+  height: 350px;
+}
+
 .btn-outline2, .btn-outline2-mini {
   border-radius: 7px;
   padding: 14px;
